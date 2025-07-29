@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: Django_PowerBI
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn PowerDjango.wsgi"
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: PowerDjango.settings
+      - key: PYTHON_VERSION
+        value: 3.11
