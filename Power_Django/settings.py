@@ -51,6 +51,9 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+
+ALLOWED_HOSTS = ['django-powerbi.onrender.com', 'localhost', '127.0.0.1']
+
 ROOT_URLCONF = "Power_Django.urls"
 
 TEMPLATES = [
